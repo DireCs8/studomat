@@ -1,0 +1,50 @@
+.show-password:hover {
+    cursor: url('https://cdn.jsdelivr.net/gh/encharm/Font-Awesome-SVG-PNG/black/png/24/eye.png'), auto;
+}
+p{
+    margin:0;
+}
+textarea{
+    width:100%;
+    margin-top:10px;
+}
+.delete-button{
+    all:unset;
+    cursor:pointer;
+    font-size:12px;
+    text-decoration: underline;
+    color:darkred;
+}
+.helpful-button{
+    all:unset;
+    cursor:pointer;
+    font-size:12px;
+    text-decoration: underline;
+    color:darkgreen;
+    font-weight:500;
+}
+.vote-button{
+    all:unset;
+    cursor:pointer;
+}
+.vote-button:focus{
+    outline:none;
+}
+.comment-reply{
+    margin-left:25px;
+    margin-top:10px;
+    border-left:1px solid gray;
+    padding-left:10px;
+    font-size:13px;
+}
+.container{
+    max-width:800px;
+}
+.edit-button{
+    all:unset;
+    cursor:pointer;
+    font-size:12px;
+    color:darkblue;
+    text-decoration:underline;
+    margin-left:5px;
+}

@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Presmerovanie na question_detail.php ak URL začína na /otazka/číslo
+RewriteRule ^otazka/([0-9]+)(-[a-zA-Z0-9_-]+)?$ question_detail.php [L,QSA]
+
+# Ak by si chcel neskôr spraviť aj /profil/meno, pridaj:
+# RewriteRule ^profil/([a-zA-Z0-9_-]+)$ profile.php?username=$1 [L,QSA]
