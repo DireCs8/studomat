@@ -44,7 +44,9 @@ if (isset($_POST['submit_question'])) {
   <?php include("question_form.php"); ?>
 
   <h3 class="mt-3">Vyhľadávanie</h3>
-  <input type="text" id="searchInput" placeholder="Hľadaj v otázkach..." onkeyup="ajaxSearch()" style="width:100%;padding:8px;margin-bottom:20px;">
+  <div class="form-group">
+  <input class="form-control" type="text" id="searchInput" placeholder="Hľadaj v otázkach..." onkeyup="ajaxSearch()">
+  </div>
   <hr>
   <h3>Otázky</h3>
   <div id="questionList"></div>
