@@ -20,6 +20,7 @@ $schoolsAndFaculties = [
             // ... ďalšie desiatky programov humanitných a jazykových štúdií (Bc., Mgr.)
         ],
         'Prírodovedecká fakulta' => [
+            'Testovací odbor(Bc.)',
             'Biológia (Bc.)',
             'Chémia (Bc.)',
             'Geografia (Bc.)',
