@@ -28,8 +28,8 @@ if ($currentUserId) {
 ?>
 
 <body>
-<div class="container">
     <?php if (!in_array($currentPage, ['login.php', 'register.php'])): ?>
+<div class="container">
         <div class="d-flex justify-content-between align-content-center mb-4">
             <h1><a href="/studomat/index.php" style="text-decoration:none;color:black;">STUDOMAT.SK</a></h1>
             <?php if ($user): ?>
@@ -39,5 +39,5 @@ if ($currentUserId) {
                 </div>
             <?php endif; ?>
         </div>
-    <?php endif; ?>
 </div>
+<?php endif; ?>

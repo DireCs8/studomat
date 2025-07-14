@@ -48,3 +48,36 @@ textarea{
     text-decoration:underline;
     margin-left:5px;
 }
+.profile-option{
+    all:unset;
+    padding:20px;
+    box-shadow: 0 2px 8px rgb(217 233 253);
+    border-radius:16px;
+    background-color:white!important;
+    cursor:pointer;
+    transition:0.3s all;
+}
+.profile-option:hover{
+    transform: scale(1.02);
+}
+.profile-title{
+    font-weight:500;
+    font-size:20px;
+}
+
+.profile-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-options-container .profile-option {
+  flex: 0 1 calc(50% - 10px/2);
+  box-sizing: border-box;
+}
+.underline{
+    text-decoration:underline;
+}
+.medium-bold{
+    font-weight: 500;
+}

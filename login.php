@@ -1,28 +1,33 @@
-<?php include("header.php") ?>
-
+<?php include("header.php"); ?>
 <?php
+// Start session & load dependencies
+if (session_status() === PHP_SESSION_NONE)
+    session_start();
+require 'config.php';
+
 $errors = [];
 $email = '';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 
+    // Fetch user by email
     $stmt = $pdo->prepare("SELECT * FROM student WHERE email = :email");
     $stmt->execute([':email' => $email]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    // Verify password
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['student_id'] = $user['id'];
         $_SESSION['name'] = $user['name'];
         $_SESSION['surname'] = $user['surname'];
 
-
+        // Update last login
         date_default_timezone_set('Europe/Bratislava');
         $now = date('Y-m-d H:i:s');
-
-        $updateStmt = $pdo->prepare("UPDATE student SET logged_in = :now WHERE id = :id");
-        $updateStmt->execute([':now' => $now, ':id' => $user['id']]);
+        $upd = $pdo->prepare("UPDATE student SET logged_in = :now WHERE id = :id");
+        $upd->execute([':now' => $now, ':id' => $user['id']]);
 
         header("Location: index.php");
         exit;
@@ -32,59 +37,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<body>
-    <div class="container">
-        <h2>Prihlásenie</h2>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">Prihlásenie</h3>
 
-        <form method="POST" action="">
-            <label>Email:</label><br>
-            <input type="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required><br><br>
+                    <?php if ($errors): ?>
+                        <div class="alert alert-danger">
+                            <?php foreach ($errors as $error): ?>
+                                <div><?= htmlspecialchars($error) ?></div>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
 
-            <label>Heslo:</label><br>
-            <input type="password" name="password" id="password" required><br><br>
+                    <form method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                value="<?= htmlspecialchars($email) ?>" required>
+                        </div>
 
-            <?php if (!empty($errors)): ?>
-                <div style="color: red;">
-                    <?php foreach ($errors as $error): ?>
-                        <p><?php echo $error; ?></p>
-                    <?php endforeach; ?>
+                        <div class="form-group position-relative">
+                            <label for="password">Heslo</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                            <small class="form-text text-muted">
+                                Podržte kurzor nad políčkom pre zobrazenie hesla
+                            </small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Prihlásiť sa
+                        </button>
+                    </form>
+
+                    <p class="mt-3 text-center">
+                        Nemáš účet? <a href="register.php">Zaregistrovať sa</a>
+                    </p>
                 </div>
-            <?php endif; ?>
-
-            <p>Nemáš u nás účet? <a href="register" class="underline">Zaregistrovať sa</a></p>
-            <input type="submit" value="Prihlásiť sa">
-        </form>
+            </div>
+        </div>
     </div>
-</body>
+</div>
 
-<?php include("footer.php") ?>
+<?php include("footer.php"); ?>
 
 <script>
-    function toggleEyeClass(field) {
-        if ($(field).val().length > 0) {
-            $(field).addClass("show-password");
-        } else {
-            $(field).removeClass("show-password");
-        }
-    }
-
-    $(document).ready(function () {
-        const fields = $("#password, #password_confirm");
-
-        fields.on("input", function () {
-            toggleEyeClass(this);
-        });
-
-        fields.hover(
-            function () {
-                if ($(this).val().length > 0) {
-                    $(this).attr("type", "text");
-                }
-            },
-            function () {
-                $(this).attr("type", "password");
-            }
-        );
+    // Show/hide password on hover
+    const pwd = document.getElementById('password');
+    pwd.addEventListener('mouseenter', () => {
+        if (pwd.value.length > 0) pwd.type = 'text';
+    });
+    pwd.addEventListener('mouseleave', () => {
+        pwd.type = 'password';
     });
 </script>
-
