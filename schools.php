@@ -385,56 +385,137 @@ $schoolsAndFaculties = [
         ]
     ]
 
-// po tialto done
-
+    'Ekonomická univerzita v Bratislave' => [
+        'Národohospodárska fakulta' => [
+            'Aplikovaná ekonómia',
+            'Financie, bankovníctvo a poisťovníctvo',
+            'Manažment verejných politík',
+            'Ekonómia a právo',
+            'Sociálny manažment a ľudské zdroje',
+            'Financie a dane',
+            'Finančné trhy a investovanie',
+            'Právo a ekonómia',
+            'Financie',
+            'Ekonómia'
+        ],
+        'Obchodná fakulta' => [
+            'Biznis a marketing',
+            'Podnikanie v cestovnom ruchu a službách',
+            'Medzinárodné podnikanie',
+            'Marketingový a obchodný manažment',
+            'Manažment medzinárodného obchodu',
+            'Manažment cestovného ruchu',
+        ],
+        'Fakulta hospodárskej informatiky' => [
+            'Data Science v ekonómii',
+            'Hospodárska informatika',
+            'Účtovníctvo',
+            'Dátová analytika a kontroling',
+            'Aktuárstvo',
+            'Informačný manažment',
+            'Účtovníctvo a audítorstvo'
+        ],
+        'Fakulta podnikového manažmentu' => [
+            'Ekonomika a manažment podniku',
+            'Ekonomika podniku',
+            'Všeobecný manažment',
+        ],
+        'Fakulta medzinárodných vzťahov' => [
+            'Medzinárodné ekonomické vzťahy',
+            'Hospodárska diplomacia'
+        ],
+        'Fakulta aplikovaných jazykov' => [
+            'Aplikované jazyky a interkultúrna komunikácia',
+        ],
+        'Podnikovohospodárska fakulta so sídlom v Košiciach' => [
+            'Ekonomika a manažment podniku',
+            'Obchodné podnikanie',
+            'Finančné riadenie podniku',
+            'Podnikový obchod a marketing',
+            'Corporate Business and Marketing'
+        ]
+    ],
 
     'Technická univerzita v Košiciach' => [
         'Strojnícka fakulta' => [
-            'Strojné inžinierstvo (Bc.)',
-            'Automobilová produkcia (Bc.)',
-            'Strojné inžinierstvo (Ing.)'
+            'Automobilová výroba',
+            'Kvalita a bezpečnosť',
+            'Počítačová podpora strojárskej výroby',
+            'Priemyselná mechatronika',
+            'Priemyselné inžinierstvo',
+            'Protetika a ortotika',
+            'Riadenie a ekonomika podniku',
+            'Strojné inžinierstvo',
+            'Technológie, manažment a inovácie strojárskej výroby',
         ],
         'Fakulta elektrotechniky a informatiky' => [
-            'Elektrotechnika (Bc.)',
-            'Informatika (Bc.)',
-            'Elektrotechnické inžinierstvo (Ing.)',
-            'Riadiace systémy (Ing.)'
+            'Automobilová elektronika',
+            'Elektroenergetika',
+            'Fyzikálne inžinierstvo progresívnych materiálov',
+            'Hospodárska informatika',
+            'Informatika',
+            'Kyberbezpečnosť',
+            'Inteligentné systémy',
+            'Počítačové siete',
+            'Počítačové modelovanie',
+            'Priemyselná elektrotechnika'
         ],
         'Stavebná fakulta' => [
-            'Pozemné stavby (Bc.)',
-            'Inžinierske konštrukcie a dopravné stavby (Bc.)',
-            'Pozemné staviteľstvo (Ing.)',
-            'Inžinierske konštrukcie (Ing.)'
+            'Pozemné stavby a architektúra',
+            'Inžinierske konštrukcie a dopravné stavby',
+            'Technológia a manažment v stavebníctve',
+            'Nosné konštrukcie a dopravné stavby',
+            'Teória tvorby budov a prostredia',
+            'Teória a navrhovanie inžinierskych stavieb',
+            'Teória technológie a riadenia v stavebníctve'
         ],
         'Fakulta baníctva, ekológie, riadenia a geotechnológií' => [
-            'Banská geológia (Bc.)',
-            'Geotechnológie (Bc.)',
-            'Environmentálne inžinierstvo (Ing.)',
-            'Geodézia a geografické informačné systémy (Ing.)'
+            'Automatizácia a riadenie procesov získavania a spracovania surovín',
+            'Baníctvo a geotechnika',
+            'Dopravná logistika podniku',
+            'Geodézia a kataster nehnuteľností',
+            'Geológia a regionálny rozvoj',
+            'Geoturizmus',
+            'Komerčná logistika',
+            'Manažérstvo procesov',
+            'Manažérstvo zemských zdrojov',
+            'Ochrana životného prostredia a ekotechnológie surovín',
+            'Priemyselná logistika',
+            'Využívanie alternatívnych zdrojov energie',
+            'Záchranárska, požiarna a bezpečnostná technika',
         ],
         'Fakulta materiálov, metalurgie a recyklácie' => [
-            'Materiálové inžinierstvo (Bc.)',
-            'Metalurgia (Bc.)',
-            'Zlievarenstvo (Ing.)',
-            'Enviromentálna chémia a technológie (Ing.)'
+            'Spracovanie a recyklácia odpadov',
+            'Hutníctvo',
+            'Materiály',
         ],
         'Fakulta výrobných technológií (so sídlom v Prešove)' => [
-            'Výrobné technológie (Bc.)',
-            'Počítačová podpora výrobných technológií (Ing.)'
+            'Smart technológie v priemysle',
+            'Počítačová podpora výrobných technológií',
+            'Technológie automobilovej výroby',
+            'Priemyselný manažment',
+            'Obnoviteľné zdroje energie',
+            'Riadenie priemyselnej výroby',
+            'Procesná technika',
+            'Výrobné technológie'
         ],
         'Ekonomická fakulta' => [
-            'Podnikanie a manažment (Bc.)',
-            'Finančný manažment (Bc.)',
-            'Ekonomika a manažment podniku (Ing.)',
-            'Bankovníctvo, investovanie a financie (Ing.)'
+            'financie, bankovníctvo a investovanie',
+            'ekonomika a manažment verejnej správy',
         ],
         'Fakulta umení' => [
-            'Dizajn (Bc.)',
-            'Výtvarné umenie (Bc.)',
-            'Dizajn (Mgr.)',
-            'Intermédiá a multimédiá (Mgr.)'
+            'Dizajn',
+            'voľné výtvarné umenie',
+            'architektúra  a urbanizmus',
+        ]
+        'Letecká fakulte' => [
+            'Manažérstvo leteckej dopravy',
+            'Pilot',
+            'Letecká a kozmická technika'
         ]
     ],
+
+    //done
 
     'Technická univerzita vo Zvolene' => [
         'Fakulta lesnícka a drevárska' => [
@@ -702,50 +783,7 @@ $schoolsAndFaculties = [
         ]
     ],
 
-    'Ekonomická univerzita v Bratislave' => [
-        'Národohospodárska fakulta' => [
-            'Aplikovaná ekonómia (Bc.)',
-            'Financie, bankovníctvo a poisťovníctvo (Bc.)',
-            'Manažment verejných politík (Bc.)',
-            'Ekonómia a právo (Bc.)',
-            'Sociálny manažment a ľudské zdroje (Bc.)',
-            'Aplikovaná ekonómia (Ing.)',
-            'Manažment verejných politík (Ing.)',
-            'Financie a dane (Ing.)'
-        ],
-        'Obchodná fakulta' => [
-            'Medzinárodný obchod (Bc.)',
-            'Marketingový manažment (Bc.)',
-            'Medzinárodný obchod (Ing.)',
-            'Marketing a obchod (Ing.)'
-        ],
-        'Fakulta hospodárskej informatiky' => [
-            'Hospodárska informatika (Bc.)',
-            'Účtovníctvo (Bc.)',
-            'Hospodárska informatika (Ing.)',
-            'Účtovníctvo a audítorstvo (Ing.)'
-        ],
-        'Fakulta podnikového manažmentu' => [
-            'Podnikový manažment (Bc.)',
-            'Podnikové financie (Bc.)',
-            'Podnikový manažment (Ing.)',
-            'Finančný manažment podniku (Ing.)'
-        ],
-        'Fakulta medzinárodných vzťahov' => [
-            'Medzinárodné ekonomické vzťahy (Bc.)',
-            'Hospodárska diplomacia (Ing.)'
-        ],
-        'Fakulta aplikovaných jazykov' => [
-            'Aplikované jazyky a interkultúrna komunikácia (Bc.)',
-            'Aplikované jazyky v ekonomickej praxi (Mgr.)'
-        ],
-        'Podnikovohospodárska fakulta so sídlom v Košiciach' => [
-            'Podnikanie v obchode (Bc.)',
-            'Finančný manažment (Bc.)',
-            'Podnikový manažment (Ing.)',
-            'Investičné rozhodovanie (Ing.)'
-        ]
-    ],
+    
 
     'Slovenská poľnohospodárska univerzita v Nitre' => [
         'Fakulta agrobiológie a potravinových zdrojov' => [
