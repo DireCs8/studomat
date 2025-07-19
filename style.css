@@ -1,83 +1,153 @@
 .show-password:hover {
     cursor: url('https://cdn.jsdelivr.net/gh/encharm/Font-Awesome-SVG-PNG/black/png/24/eye.png'), auto;
 }
-p{
-    margin:0;
+
+p {
+    margin: 0;
 }
-textarea{
-    width:100%;
-    margin-top:10px;
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
 }
-.delete-button{
-    all:unset;
-    cursor:pointer;
-    font-size:12px;
+
+.delete-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 12px;
     text-decoration: underline;
-    color:darkred;
+    color: darkred;
 }
-.helpful-button{
-    all:unset;
-    cursor:pointer;
-    font-size:12px;
+
+.helpful-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 12px;
     text-decoration: underline;
-    color:darkgreen;
-    font-weight:500;
+    color: darkgreen;
+    font-weight: 500;
 }
-.vote-button{
-    all:unset;
-    cursor:pointer;
+
+.vote-button {
+    all: unset;
+    cursor: pointer;
 }
-.vote-button:focus{
-    outline:none;
+
+.vote-button:focus {
+    outline: none;
 }
-.comment-reply{
-    margin-left:25px;
-    margin-top:10px;
-    border-left:1px solid gray;
-    padding-left:10px;
-    font-size:13px;
+
+.comment-reply {
+    margin-left: 25px;
+    margin-top: 10px;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    font-size: 13px;
 }
-.container{
-    max-width:800px;
+
+.container {
+    max-width: 800px;
 }
-.edit-button{
-    all:unset;
-    cursor:pointer;
-    font-size:12px;
-    color:darkblue;
-    text-decoration:underline;
-    margin-left:5px;
+
+.edit-button {
+    all: unset;
+    cursor: pointer;
+    font-size: 12px;
+    color: darkblue;
+    text-decoration: underline;
+    margin-left: 5px;
 }
-.profile-option{
-    all:unset;
-    padding:20px;
+
+.profile-option {
+    all: unset;
+    padding: 20px;
     box-shadow: 0 2px 8px rgb(217 233 253);
-    border-radius:16px;
-    background-color:white!important;
-    cursor:pointer;
-    transition:0.3s all;
+    border-radius: 16px;
+    background-color: white !important;
+    cursor: pointer;
+    transition: 0.3s all;
 }
-.profile-option:hover{
+
+.profile-option:hover {
     transform: scale(1.02);
+    text-decoration: none;
+    color: black;
 }
-.profile-title{
-    font-weight:500;
-    font-size:20px;
+
+.profile-title {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .profile-options-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .profile-options-container .profile-option {
-  flex: 0 1 calc(50% - 10px/2);
-  box-sizing: border-box;
+    flex: 0 1 calc(50% - 10px/2);
+    box-sizing: border-box;
 }
-.underline{
-    text-decoration:underline;
+
+.underline {
+    text-decoration: underline;
 }
-.medium-bold{
+
+.medium-bold {
     font-weight: 500;
+}
+
+.form-border-box {
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.form-border-box label {
+    font-weight: 500;
+}
+
+.form-control {
+    transition: 0.5s all;
+    box-shadow:none!important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: 1px solid lightblue;
+}
+
+.form-group {
+    margin-top: 5px;
+}
+
+.btn-rounded {
+    border-radius: 16px;
+}
+
+.primary-select {
+    width: 65% !important;
+    margin-right: 2%;
+}
+
+.secondary-select {
+    width: 33% !important;
+}
+
+.is-valid {
+    border-color: #28a745 !important;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.btn:focus{
+    box-shadow:none!important;
+}
+.btn-outline-secondary{
+    border: 1px solid #ced4da;
+}
+.alert-danger{
+    font-weight:500;
 }
