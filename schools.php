@@ -266,7 +266,7 @@ $schoolsAndFaculties = [
             'Žurnalistika'
 
         ],
-    ]
+    ],
     
 
 
@@ -360,7 +360,7 @@ $schoolsAndFaculties = [
             'Dizajn',
             'Architektúra',
             'Umenie vo verejnom priestore'
-        ]
+        ],
 
         'Materiálovotechnologická fakulta v Trnave' => [
             'Aplikovaná informatika a automatizácia v priemysle',
@@ -383,7 +383,7 @@ $schoolsAndFaculties = [
             'Inteligentné Softvérové systémy',
             'Aplikovaná informatika'
         ]
-    ]
+        ],
 
     'Ekonomická univerzita v Bratislave' => [
         'Národohospodárska fakulta' => [
@@ -507,12 +507,12 @@ $schoolsAndFaculties = [
             'Dizajn',
             'voľné výtvarné umenie',
             'architektúra  a urbanizmus',
-        ]
-        'Letecká fakulte' => [
+        ],
+        'Letecká fakulta' => [
             'Manažérstvo leteckej dopravy',
             'Pilot',
             'Letecká a kozmická technika'
-        ]
+        ],
     ],
 
     //done
