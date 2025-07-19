@@ -119,13 +119,13 @@ $schoolsAndFaculties = [
             'Pôrodná asistencia',
             'Verejné zdravotníctvo',
             'Všeobecné lekárstvo',
-            'Zubné lekárstvo'
+            'Zubné lekárstvo',
         ],
         
        
         'Fakulta managementu' => [
             'Manažment',
-            'Medzinárodný manažment'
+            'Medzinárodný manažment',
         ],
 
         'Fakulta sociálnych a ekonomických vied' => [
@@ -133,12 +133,12 @@ $schoolsAndFaculties = [
             'Európske štúdiá',
             'Mediamatika',
             'Sociálna a pracovná psychológia',
-            'Sociálna antropológia'
-        ]
+            'Sociálna antropológia',
+        ],
     
         'Lekárska fakulta' => [
             'Všeobecné lekárstvo',
-            'Zubné lekárstvo'
+            'Zubné lekárstvo',
         ],
         'Právnická fakulta' => [
             'Ekonómia a právo',
